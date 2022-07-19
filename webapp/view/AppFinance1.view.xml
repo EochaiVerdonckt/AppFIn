@@ -1,0 +1,53 @@
+<mvc:View controllerName="com.coopersap.project1.controller.AppFinance1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+  <Shell id="shell">
+    <App id="app">
+    <pages>
+    <Page id="page" title="{i18n>title}">
+     <content>
+     <f:simpleForm
+			id="simpleFormChange"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			title="FInancieel dagboek">
+  <f:content>
+         <Label text="UW financieel dagboek."/>
+         	<Label 
+					text="omschrijving"/>
+				<Input
+					id="omschrijving"/>
+			<Label 
+					text="inkomsten"/>
+				<Input
+					id="inkomsten"/>
+          	<Label 
+					text="uitgaves"/>
+				<Input
+					id="uitgaves"/>
+        </f:content>
+           </f:simpleForm>
+      </content>
+       <footer> 
+            <OverflowToolbar>
+             <Button text="Copyroght 2022 - Coopersap"  />
+            </OverflowToolbar> 
+        </footer> 
+    </Page>
+    </pages>
+    </App>
+  </Shell>
+</mvc:View>
